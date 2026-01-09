@@ -10,7 +10,7 @@ public class Chestwarningmod implements ModInitializer {
     public void onInitialize() {
         System.out.println("Initializing " + MOD_ID);
 
-
+        ChestOpenCallback.register();
 
         System.out.println("Initialized " + MOD_ID);
     }
