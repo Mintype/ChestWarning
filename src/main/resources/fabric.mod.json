@@ -3,11 +3,10 @@
   "id": "chestwarningmod",
   "version": "${version}",
   "name": "ChestWarningMod",
-  "description": "",
-  "authors": [],
+  "description": "A Minecraft Fabric mod that warns players when opening chests they might not own, preventing accidental theft.",
+  "authors": ["Mintype"],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/chestwarningmod/icon.png",
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [

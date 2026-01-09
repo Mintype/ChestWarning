@@ -1,6 +1,7 @@
 package org.mintype.chestwarningmod;
 
 import net.fabricmc.api.ModInitializer;
+import org.mintype.chestwarningmod.storage.WarnedPlayersStorage;
 
 public class Chestwarningmod implements ModInitializer {
 
@@ -9,6 +10,8 @@ public class Chestwarningmod implements ModInitializer {
     @Override
     public void onInitialize() {
         System.out.println("Initializing " + MOD_ID);
+
+        WarnedPlayersStorage.init();
 
         ChestOpenCallback.register();
 
