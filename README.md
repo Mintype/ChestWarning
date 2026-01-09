@@ -6,7 +6,7 @@ A lightweight **Fabric 1.21.11** mod designed for server administrators to preve
 
 * **First-Interaction Warning:** Intercepts the first time a player right-clicks a chest or trapped chest.
 * **Action Interruption:** Automatically cancels the first chest-opening action so the player is forced to acknowledge the warning.
-* **Persistent Storage:** Uses the **Fabric Data Attachment API** to ensure that once a player is warned, the status is saved permanently to their data file—even across server restarts or player deaths.
+* **Persistent Storage:** Uses the **Fabric Data Attachment API** to ensure that once a player is warned, the status is saved permanently to their data file.
 
 ## Installation
 
