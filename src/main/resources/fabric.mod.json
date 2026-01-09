@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "chestwarningmod",
+  "version": "${version}",
+  "name": "ChestWarningMod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chestwarningmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.mintype.chestwarningmod.client.ChestwarningmodDataGenerator"
+    ],
+    "client": [
+      "org.mintype.chestwarningmod.client.ChestwarningmodClient"
+    ],
+    "main": [
+      "org.mintype.chestwarningmod.Chestwarningmod"
+    ]
+  },
+  "mixins": [
+    "chestwarningmod.mixins.json",
+    {
+      "config": "chestwarningmod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
